@@ -35,3 +35,19 @@ dynamic memory allocation (heap)
 memory errors
 - segmentation fault: program attempts to access memory not allocated to it
 - bus error: failure in the execution of machine language instruction resulting from the processor detecting an anomalous condition on its bus
+
+
+## Floating Points
+floating point encoding: 1bit(sign bit) + 8bits(exponent) + 23bits(significand) = (-1)^2 x (1.significant) x 2^(exponent-127)
+eg. 0011111110000000000000000000000 = (-1)^0 x (1.1 base two) x (127-127) = 1.1 base two = 1 x 2^0 + 1 x 2^-1 = 1.5 base ten
+
+## Machine Language RISCV
+reducing instruction set computing (RISC)
+- simpler instruction set makes it easier to build fast hardware
+- let software do the complicated operations by composing simpler ones
+
+register (assembly uses registers to store values, they are small and fast, store most frequently used variables in the registers)
+
+assembly code:
+syntax: operation(op) destination(dst), src1, src2
+eg. add t0, x0, x0
