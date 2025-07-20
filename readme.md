@@ -2,7 +2,7 @@
 high level language program (e.g. C) "compiler"-> assembly language program (e.g. RISCV) "assembler"-> machine language program (e.g. RISCV) "machine interpretation"-> hardward architecture description -> logic circuit description
 
 ## Number Representation
-# Bits can represent ANYTHING
+### Bits can represent ANYTHING
 Decimal(base 10), Binary(base 2), Hexadecimal(base 16)
 General Formula: Dn-1Dn-2...D1D0 (n-digit number in base B) = Dn-1 x Bn-1 + Dn-2 x Bn-2 + ... +D0 x B0
 - unsigned intergers (only non-negative integers)
@@ -51,3 +51,15 @@ register (assembly uses registers to store values, they are small and fast, stor
 assembly code:
 syntax: operation(op) destination(dst), src1, src2
 eg. add t0, x0, x0
+
+
+## Interpreter (slower)
+directly executes a program in the source language; directly interpret a high level language when efficiency is not critical
+## Translator (faster)
+converts a program from the source language to an equivalent program in another language; translate to a lower level language when increased performance is desired!
+
+## More
+- compiler (input higher-level language code, output assembly language code)
+- assembler (input assembly language code, output object code and information tables)
+- linker (input object code files and information tables, output executable code)
+- loader (input executable code, output program is run) "it is the operating system"
