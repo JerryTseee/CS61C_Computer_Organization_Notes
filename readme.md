@@ -63,3 +63,19 @@ converts a program from the source language to an equivalent program in another 
 - assembler (input assembly language code, output object code and information tables)
 - linker (input object code files and information tables, output executable code)
 - loader (input executable code, output program is run) "it is the operating system"
+
+
+## Logic Gates and Truth Table
+- NOT
+- AND
+- OR
+- NAND
+- NOR
+- XOR
+truth tables are table that relates the inputs to a combinational logic circuit to its output (2^n outputs)
+
+## CPU (central processing unit)
+- datapath: contains the hardware necessary to perform operations required by processor
+- control: decides what each piece of the datapath should do (what operation am i performing? do i need to get info from memory? ...)
+
+Processor(control, datapath), memory, input, output
