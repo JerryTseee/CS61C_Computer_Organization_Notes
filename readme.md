@@ -79,3 +79,17 @@ truth tables are table that relates the inputs to a combinational logic circuit 
 - control: decides what each piece of the datapath should do (what operation am i performing? do i need to get info from memory? ...)
 
 Processor(control, datapath), memory, input, output
+
+
+## Memory Hierarchy
+from smaller/faster/expensive to bigger/slower/cheaper (top to down)
+cache: holds a copy of a subset of main memory
+eg. L1 cache, L2 cache
+then main memory, then secondary memory
+- registers <-> memory (assembly level programmer)
+- cache <-> main memory (by the cache controller hardware)
+- main memory <-> disks (secondary storage)
+
+cache hit: cache holds a valid copy of the block, so return the desired data
+cache miss: cache does not have desired block, so fetch from memory and put in empty slot (if cache is full, then discard one and replace it)
+Average Memory Access Time (AMAT) = hit time + miss rate x miss penalty (average time to access memory consider hit time and miss time)
