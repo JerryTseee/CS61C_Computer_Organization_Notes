@@ -93,3 +93,17 @@ then main memory, then secondary memory
 cache hit: cache holds a valid copy of the block, so return the desired data
 cache miss: cache does not have desired block, so fetch from memory and put in empty slot (if cache is full, then discard one and replace it)
 Average Memory Access Time (AMAT) = hit time + miss rate x miss penalty (average time to access memory consider hit time and miss time)
+
+## Operating System
+OS controls how software applications access and use hardware on your computer. They provide a general interface for common actions.
+
+## Multi-programming
+OS runs multiple applications at the same time
+Deciding which process to run is called scheduling
+## Virtual Memory
+give each process the illusion of a full memory address space it has completely to itself
+- allow multiple processes to simultaneously occupy memory and provide protection
+- give each program illusion that they have their private address
+- divide RAM into segments with a "base" and "bound" - each program access their segments only
+- paged memory: divide physical memory and virtual memory into equal units called pages, same size, need indexing
+- address translation: from virtual addr (virtual page number + offset) to physical addr
