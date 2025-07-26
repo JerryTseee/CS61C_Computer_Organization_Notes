@@ -114,7 +114,7 @@ Inputs: keyboard and mouse, touch screen, audio input, motion
 Outputs: displays, audio output, printers, LEDs
 - Disks: it is an I/O device, it is non-volatile (magnetic drives "cheaper, slower, larger" vs flash drives "expensive, faster, smaller")
 
-# Moore's Law
+## Moore's Law
 every two years, the number of transistors on a chip is doubled
 
 ## Parallelism
@@ -122,3 +122,6 @@ every two years, the number of transistors on a chip is doubled
 - multiple-threading: run multiple tasks on a single core concurrently
 - Amdahl's Law: the amount of speedup that can be achieved through parallelism is limited by the non-parallel portion of your program
 - use a "lock" to grant access to a region (critical section) so that only one thread can operate at a time
+
+## MapReduce
+simple data-parallel programming model and implementation for processing large dataset, users specify the computation in terms of a map function and a reduce function
