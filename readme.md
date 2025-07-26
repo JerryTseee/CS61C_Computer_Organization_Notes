@@ -107,3 +107,18 @@ give each process the illusion of a full memory address space it has completely 
 - divide RAM into segments with a "base" and "bound" - each program access their segments only
 - paged memory: divide physical memory and virtual memory into equal units called pages, same size, need indexing
 - address translation: from virtual addr (virtual page number + offset) to physical addr
+
+
+## Input and Output
+Inputs: keyboard and mouse, touch screen, audio input, motion
+Outputs: displays, audio output, printers, LEDs
+- Disks: it is an I/O device, it is non-volatile (magnetic drives "cheaper, slower, larger" vs flash drives "expensive, faster, smaller")
+
+# Moore's Law
+every two years, the number of transistors on a chip is doubled
+
+## Parallelism
+- multiple-processing: use multiple cores to run multiple tasks in parallel
+- multiple-threading: run multiple tasks on a single core concurrently
+- Amdahl's Law: the amount of speedup that can be achieved through parallelism is limited by the non-parallel portion of your program
+- use a "lock" to grant access to a region (critical section) so that only one thread can operate at a time
